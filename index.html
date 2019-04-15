@@ -1,65 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giphy</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
-    <style type="text/css">
-    div,
-    form,
-    button,
-    input {
-        margin: 10px;
-    }
-    </style>
-    <title>Giftastic</title>
-
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <div class="pageContent">
+        <div id="animal"></div>
+        <div class="container">
+            <form id="animal-form">
+                <label for="animal-input">Add Animal</label>
+                <br>
+                <input type="text" id="animal-input" name="">
 
-    <div class="container">
-        <div class="animalButtons" id="buttons-view">
+                <input id="addAnimal" class="btn btn-primary" type="submit" value="submit">
 
+            </form>
         </div>
 
-        <form>
-            <div class="form-group">
-                <label for="animalName">Enter an Animal</label>
-                <input type="animal" class="form-control" id="inputAnimal" placeholder="Enter animal">
-                <small id="" class="form-text text-muted"></small>
-            </div>
-
-            <button type="submit" id="addAnimal" class="btn btn-primary">Submit</button>
-        </form>
-        <!-- <form id="animal-form">
-                <label for="actor-input">Add an animal</label>
-                <input type="text" id="animal-input"><br>
-                <input id="addAnimal" type="submit" value="Submit">
-              </form> -->
-
-        <div id="animals">
-                
-              </div>
-
-
-
-        <div class="animal-gifs" id="gifs">
-                
-              </div>
+        <div id="gifs"></div>
 
     </div>
 
 
 
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="app.js"></script>
-
+    <script type="text/javascript" src="giphy.js"></script>
 </body>
 
 </html>
